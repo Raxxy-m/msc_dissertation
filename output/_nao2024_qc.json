@@ -1,0 +1,22 @@
+{
+  "access_date": "2026-07-21",
+  "cpc_2024_djfm": 0.75445,
+  "rescaled_2024_hurrell": 2.1118213599438596,
+  "n_rows_filled_2024": 40420,
+  "n_nao_after": 648788,
+  "n_nao_before": 608368,
+  "source_counts": {
+    "hurrell": 608368,
+    "cpc_rescaled": 40420
+  },
+  "cal_a": 0.0006558482437959561,
+  "cal_b": 2.7982841960369322,
+  "cal_r": 0.909114012361482,
+  "cal_r2": 0.8264882874719929,
+  "cal_rmse": 0.8975472614251975,
+  "cal_n_overlap": 73,
+  "cal_overlap_years": [
+    1951,
+    2023
+  ]
+}

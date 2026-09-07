@@ -1,0 +1,28 @@
+#ignore the raw data files/folders
+site indices/
+phenology/
+site location/
+speciesTrends/
+traits/
+data/haduk/
+data/site_daily_climate/
+
+#ignore the venv
+.venv
+
+#ignore the report template folder
+./Template
+
+#ignore the DS Store
+.DS_Store
+
+#ignore cache
+__pycache__
+
+DSATemplate.zip
+
+#ignore file types
+*.parquet
+*.csv
+*.pdf
+*.tex

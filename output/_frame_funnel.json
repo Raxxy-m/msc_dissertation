@@ -1,0 +1,1 @@
+{"feature_table_rows":648788,"require_firstday_and_keys":648788,"year_in_climate_range":648713,"gb_bng_sites":620711,"implied_doy_valid":620711,"not_flag_implausible":620711,"temporal_train":294973,"temporal_test":325738,"cv_fold_sizes":[124143,124142,124142,124142,124142],"n_bng_sites":3496,"temporal_cutoff":2014,"cv_k":5}

@@ -1,0 +1,125 @@
+{
+  "n_rows": 648788,
+  "n_sites": 3974,
+  "n_species": 60,
+  "year_range": [
+    1973,
+    2024
+  ],
+  "firstday": {
+    "count": 648788.0,
+    "mean": 68.5,
+    "std": 39.54,
+    "min": -30.0,
+    "25%": 36.0,
+    "50%": 72.0,
+    "75%": 98.0,
+    "max": 215.0
+  },
+  "figures": {
+    "fig1": "fig01_coverage_by_year.png",
+    "fig2": "fig02_records_per_species.png",
+    "fig3": "fig03_site_map.png",
+    "fig4": "fig04_firstday_distribution.png",
+    "fig5": "fig05_missingness.png",
+    "fig6": "fig06_phenology_trend.png",
+    "fig7": "fig07_firstday_vs_spring_temp.png",
+    "fig8": "fig08_climate_correlation.png",
+    "fig9": "fig09_nao_relationships.png"
+  },
+  "coverage": {
+    "first_year_records": 779,
+    "last_year_records": 40420,
+    "first_year_sites": 36,
+    "last_year_sites": 2406
+  },
+  "records_per_species": {
+    "richest": "Maniola jurtina",
+    "richest_n": 32306,
+    "poorest": "Phengaris arion",
+    "poorest_n": 48,
+    "n_under_500": 10
+  },
+  "site_map": {
+    "sites_with_coords": 3606,
+    "sites_no_coords": 368,
+    "non_gb_country_sites": 110,
+    "out_of_bng_bounds": 43,
+    "min_northing": -81059.0
+  },
+  "missingness_top": {
+    "TMEAN_M12P": 5.76,
+    "TMIN_M12P": 5.76,
+    "TMAX_M12P": 5.76,
+    "TMEAN_M05": 5.64,
+    "TMIN_DJF": 5.64,
+    "TMEAN_M02": 5.64,
+    "TMAX_M05": 5.64,
+    "TMEAN_M01": 5.64,
+    "TMIN_M01": 5.64,
+    "TMAX_M01": 5.64,
+    "TMIN_M05": 5.64,
+    "TMAX_M03": 5.64,
+    "TMIN_M03": 5.64,
+    "TMEAN_M03": 5.64,
+    "TMAX_M02": 5.64
+  },
+  "phenology_trend": {
+    "overall_slope_days_per_decade": -1.675,
+    "overall_pearson_r": -0.377,
+    "n_years": 49,
+    "species_slopes_days_per_decade": {
+      "Anthocharis cardamines": -4.42,
+      "Gonepteryx rhamni": -0.88,
+      "Pieris rapae": -1.81,
+      "Maniola jurtina": -2.32,
+      "Aphantopus hyperantus": -2.71,
+      "Pyronia tithonus": -1.5
+    }
+  },
+  "firstday_vs_temp": {
+    "feature": "TMEAN_MAM",
+    "pooled_slope_days_per_C": -4.261,
+    "pooled_r": -0.119,
+    "within_species_slope_days_per_C": -4.737,
+    "within_species_r": -0.168,
+    "n": 612201
+  },
+  "corr_heatmap": {
+    "features": [
+      "TMEAN_M12P",
+      "TMEAN_M01",
+      "TMEAN_M02",
+      "TMEAN_M03",
+      "TMEAN_M04",
+      "TMEAN_M05",
+      "TMEAN_DJF",
+      "TMEAN_MAM",
+      "GDD",
+      "RAIN_DJF",
+      "RAIN_MAM",
+      "NAO_DJFM",
+      "NAO_DJFM_LAG1"
+    ],
+    "max_pair": [
+      "TMEAN_MAM",
+      "GDD"
+    ],
+    "max_val": 0.965
+  },
+  "nao": {
+    "present": true,
+    "nao_vs_DJF_r": 0.675,
+    "nao_vs_MAM_r": 0.413,
+    "firstday_anom_vs_nao_slope": -0.71,
+    "firstday_anom_vs_nao_r": -0.234,
+    "n_years": 49
+  },
+  "data_issues": [
+    "110 sites have non-GB coordinates (Northern Ireland Irish-Grid / Channel Islands / Isle of Man); min northing -81059 m (Channel Islands are negative). These plot mislocated on a BNG map and were excluded from the climate join upstream.",
+    "368 distinct sites have no coordinates (cannot be mapped or climate-joined).",
+    "FIRSTDAY ranges -30\u2026215 days after 1 April; negative values = species first seen before 1 April (early spring flyers), plausible not erroneous.",
+    "NAO_DJFM missing for flight-year 2024 (station index ends 2023); NAO figures use 1976\u20132023 fully, 2024 only via LAG1.",
+    "Data-poor species: 10 of 60 species have <500 records (poorest: Phengaris arion, 48); per-species models for these will be unstable."
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "n_species": 60,
+  "cook_file": "/Users/raghavmaheshwari/Documents/sem2/Dissertation/traits/data/ecological_traits_2024.csv",
+  "mw_file": null,
+  "source_meta": {
+    "cook": {
+      "file": "ecological_traits_2024.csv",
+      "rows": 968,
+      "n_voltinism_coded": 831,
+      "name_col": "scientific_name",
+      "volt_cols": [
+        "obligate_univoltine",
+        "obligate_multivoltine",
+        "partial_generation"
+      ]
+    }
+  },
+  "n_assigned": 59,
+  "review_list": [
+    "Thymelicus lineola/sylvestris"
+  ],
+  "class_counts": {
+    "univoltine": 32,
+    "multivoltine": 14,
+    "variable": 11,
+    "MANUAL_REVIEW": 1
+  }
+}
